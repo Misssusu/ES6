@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ES6</title>
+</head>
+<body>
+    <div>
+        <h4>对象</h4>
+        <p>1.创建对象的3种方法</p>
+        <ul>
+            <li>new Object()</li>
+            <li>Object.create(null)</li>
+            <li>{}字面量</li>
+            <span>Object.create(null)会创建一个真正的空对象，没有__proto__属性。第一个参数是新创建对象的原型对象</span>
+        </ul>
+        <p>2.对象属性缩写</p>
+        <p>3.动态属性名</p>
+        <p>4.方法定义</p>
+        <span>对象属性也可以是一个函数、getter、setter方法</span>
+        <p>5.扩展属性</p>
+        <span>深拷贝一个对象</span>
+        <ul>
+            <li>for循环，将obj的key和value赋值给_obj的key和value</li>
+            <li>_obj = Object.assign({},obj)</li>
+            <li>_obj = {...obj}</li>
+        </ul>
+        <p>6.变更原型</p>
+        <ul>
+            <span>将obj1的原型设置为obj</span>
+            <li>var obj1 = Object.create(obj)</li>
+            <li>Object.getprototypeof(obj)获取一个对象的原型</li>
+        </ul>
+        <p>7.Object.defineProperty(obj,prop,descriptor)</p>
+        <p>在一个对象上定义一个新属性，或者修改一个对象的现有属性，并返回这个对象</p>
+        <p>8.null与undefined</p>
+        <p>undefined是window的只读属性</p>
+        <p>Number(undefined)  返回NaN</p>
+        <p>Number(null) == 0</p>
+        <p>9.设置一个属性为只读</p>
+        <ul>
+            <li>使用对象的get方法</li>
+            <li>使用Object.defineProperty()的writable属性，设置为false</li>
+        </ul>
+        <p>10.设置一个对象的属性为不可遍历</p>
+        <p>使用Object.defineProperty()的enumerable属性，设置为false(默认就是false)</p>
+        <p>10.Object.getOwnPropertyDescriptor(obj,prop)</p>
+        <p>返回指定对象上一个自有属性的描述对象</p>
+        <p>11.Object.defineProperties(obj,props)</p>
+        <p>在一个对象上定义或修改多个属性，并返回该对象</p>
+        <p>12.遍历对象的属性</p>
+        <ul>
+            <li>Object.keys()返回对象自身的属性(而不是继承的)，只返回可枚举属性</li>
+            <li>Object.getOwnPropertyNames()返回对象自身的属性(而不是继承的)，还返回不可枚举属性</li>
+        </ul>
+    </div>
+
+</body>
+<script src="index.js"></script>
+</html>
