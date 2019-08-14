@@ -22,6 +22,22 @@
             <li>3.不可以使用arguments对象，该对象在函数体内不存在。如果要用，可以用 rest 参数代替。</li>
             <li>4.不可以使用yield命令，因此箭头函数不能用作 Generator 函数。</li>
         </ul>
+        <h4>函数默认参数</h4>
+        <h4>展开操作</h4>
+        <h4>解构赋值</h4>
+        <ul>
+            <li>[a,b] = [1,2]</li>
+            <!--            a = 1,b = 3-->
+            <li>[a,b=3] = [1]</li>
+            <li>{name:xingming} = {name: 'suyuan'}</li>
+            <li>{a,b,c} = {a:1,b:2,c:3}</li>
+        </ul>
+        <h4>深拷贝</h4>
+        <p>JSON.parse(JSON.stringify(data))这个方法不适用于复杂对象，递归适用于复杂对象</p>
+        <h4>属性加强</h4>
+        <p>var obj = { x, y }</p>
+        <h4>async和await</h4>
+        <p>await只能放在async函数里面</p>
     </div>
 
 </body>
